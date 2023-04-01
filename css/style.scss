@@ -104,4 +104,21 @@ body {
 .skills-logo {
     max-height: 75px;
     width: auto;
+
+    &:hover {
+        border-radius: 10%;
+        box-shadow:
+            1px 1px $nav-bg-color,
+            2px 2px $nav-bg-color,
+            3px 3px $nav-bg-color;
+        -webkit-transform: translateX(-1px);
+        transform: translateX(-1px);
+        cursor: pointer;
+
+    }
+}
+
+.english-logo {
+    max-height: 125px;
+    width: auto;
 }

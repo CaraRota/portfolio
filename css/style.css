@@ -99,4 +99,15 @@ body {
 .skills-logo {
   max-height: 75px;
   width: auto;
+}
+.skills-logo:hover {
+  border-radius: 10%;
+  box-shadow: 1px 1px #0e79b2, 2px 2px #0e79b2, 3px 3px #0e79b2;
+  transform: translateX(-1px);
+  cursor: pointer;
+}
+
+.english-logo {
+  max-height: 125px;
+  width: auto;
 }/*# sourceMappingURL=style.css.map */
