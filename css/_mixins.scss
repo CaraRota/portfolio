@@ -1,0 +1,7 @@
+@import "variables";
+
+@mixin navbar ($nav-bg-color, $shadow, $color) {
+    background-color: $nav-bg-color;
+    box-shadow: $shadow;
+    color: $color;
+}

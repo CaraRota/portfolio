@@ -1,0 +1,74 @@
+@import "mixins";
+@import "variables";
+
+// RESET
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $site-bg-color;
+}
+
+.bg-nav {
+    @include navbar($nav-bg-color, $shadow, $color);
+}
+
+.button-eff {
+    background-color: $nav-bg-color;
+    color: $btn-color1;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px solid $btn-color1;
+    border-radius: 0.5rem;
+    position: relative;
+    top: 0;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 0.6em $btn-color2, 0 0.7em rgba(0, 0, 0, 0.4);
+
+    &:hover {
+        background: $btn-color1;
+        color: $nav-bg-color;
+        top: 0.2em;
+        box-shadow: 0 0.4em $btn-color2, 0 0.5em rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+        top: 0.4em;
+        box-shadow: 0 0.2em $btn-color2, 0 0.5em rgba(0, 0, 0, 0.4);
+    }
+
+    &:focus {
+        transition: 0.5s;
+        color: $btn-focus;
+    }
+}
+
+.main-img {
+    max-height: 500px;
+    width: auto;
+}
+
+.title-h1 {
+    color: $nav-bg-color;
+    text-shadow: $nav-bg-color -1px 0 3px;
+    font-weight: bold;
+}
+
+.title-h3 {
+    color: $site-bg-color;
+    text-shadow: #000 1px 0 10px;
+}
+.container {
+    overflow-x: hidden;
+}
