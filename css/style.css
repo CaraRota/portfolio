@@ -18,10 +18,6 @@ body {
   color: #fff;
 }
 
-.vh {
-  height: 100vh;
-}
-
 .button-eff {
   background-color: #0e79b2;
   color: #e5dc15;
@@ -115,4 +111,10 @@ body {
 .english-logo {
   max-height: 125px;
   width: auto;
+}
+
+@media (min-width: 768px) {
+  .vh {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=style.css.map */

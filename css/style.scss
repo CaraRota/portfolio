@@ -20,11 +20,6 @@ body {
     @include navbar($nav-bg-color, $shadow, $color);
 }
 
-// We assign a verticual height in order to hide our content in the rest of the pages
-.vh {
-    height: 100vh;
-}
-
 .button-eff {
     background-color: $nav-bg-color;
     color: $btn-color1;
@@ -126,4 +121,11 @@ body {
 .english-logo {
     max-height: 125px;
     width: auto;
+}
+
+// We assign a verticual height in order to hide our content in the rest of the pages when we navigate with >= MD screens
+@media (min-width: 768px) {
+    .vh {
+        height: 100vh;
+    }
 }
