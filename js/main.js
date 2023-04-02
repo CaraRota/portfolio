@@ -4,7 +4,7 @@ $(window).scroll(function () {
     var windowHeight = $(this).height();
     var fadeLeft = $('#fadeLeft');
     var fadeRight = $('#fadeRight');
-    var fadePercentage = 0.3; // Set the fade percentage to 50%
+    var fadePercentage = 0.3; // Set the fade percentage to 30%
     
     // Calculate the fade in and out positions based on the fade percentage
     var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
@@ -35,7 +35,7 @@ $(window).scroll(function () {
     var windowHeight = $(this).height();
     var fadeLeft = $('#backLeft');
     var fadeRight = $('#backRight');
-    var fadePercentage = 0.5; // Set the fade percentage to 50%
+    var fadePercentage = 0.3; // Set the fade percentage to 30%
     
     // Calculate the fade in and out positions based on the fade percentage
     var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
