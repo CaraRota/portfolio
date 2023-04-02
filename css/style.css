@@ -18,6 +18,10 @@ body {
   color: #fff;
 }
 
+.vh {
+  height: 100vh;
+}
+
 .button-eff {
   background-color: #0e79b2;
   color: #e5dc15;
