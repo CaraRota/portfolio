@@ -103,7 +103,6 @@ body {
 .skills-logo:hover {
   border-radius: 10%;
   box-shadow: 1px 1px #0e79b2, 2px 2px #0e79b2, 3px 3px #0e79b2;
-  -webkit-transform: translateX(-1px);
   transform: translateX(-1px);
   cursor: pointer;
 }

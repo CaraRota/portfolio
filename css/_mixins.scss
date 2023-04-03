@@ -5,3 +5,8 @@
     box-shadow: $shadow;
     color: $color;
 }
+
+@mixin hw($h) {
+    max-height: $h;
+    width: auto;
+}

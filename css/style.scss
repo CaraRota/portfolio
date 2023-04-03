@@ -55,8 +55,7 @@ body {
 }
 
 .main-img {
-    max-height: 500px;
-    width: auto;
+    @include hw(500px);
 }
 
 .title-h1 {
@@ -102,8 +101,7 @@ body {
 }
 
 .skills-logo {
-    max-height: 75px;
-    width: auto;
+    @include hw(75px);
 
     &:hover {
         border-radius: 10%;
