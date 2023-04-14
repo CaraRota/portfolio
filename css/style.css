@@ -10,40 +10,40 @@ html {
 }
 
 body {
-  background: #ccc;
+  background: #F0F0F0;
 }
 
 .bg-nav {
-  background-color: #0e79b2;
+  background-color: #3C486B;
   box-shadow: 0 0 10px 0 #000;
   color: #fff;
 }
 
 .button-eff {
-  background-color: #0e79b2;
-  color: #e5dc15;
+  background-color: #3C486B;
+  color: #F9D949;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   margin: 1rem;
   padding: 0.5rem;
-  border: 2px solid #e5dc15;
+  border: 2px solid #F9D949;
   border-radius: 0.5rem;
   position: relative;
   top: 0;
   transition: all 300ms ease-in-out;
-  box-shadow: 0 0.6em #c2bb11, 0 0.7em rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.6em #b9bf45, 0 0.7em rgba(0, 0, 0, 0.4);
 }
 .button-eff:hover {
-  background: #e5dc15;
-  color: #0e79b2;
+  background: #F9D949;
+  color: #3C486B;
   top: 0.2em;
-  box-shadow: 0 0.4em #c2bb11, 0 0.5em rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.4em #b9bf45, 0 0.5em rgba(0, 0, 0, 0.4);
 }
 .button-eff:active {
   top: 0.4em;
-  box-shadow: 0 0.2em #c2bb11, 0 0.5em rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.2em #b9bf45, 0 0.5em rgba(0, 0, 0, 0.4);
 }
 .button-eff:focus {
   transition: 0.5s;
@@ -56,14 +56,14 @@ body {
 }
 
 .title-h1 {
-  color: #0e79b2;
-  text-shadow: #0e79b2 -1px 0 3px;
+  color: #3C486B;
+  text-shadow: #3C486B -1px 0 3px;
   font-weight: bold;
   font-family: "Bebas Neue", cursive;
 }
 
 .title-h3 {
-  color: #ccc;
+  color: #F0F0F0;
   text-shadow: #000 1px 0 10px;
 }
 
@@ -75,7 +75,7 @@ body {
   padding-left: 5px;
   padding-right: 5px;
   transform: translate(-50%, -50%);
-  background-image: linear-gradient(#c2bb11, #e5dc15);
+  background-image: linear-gradient(#b9bf45, #F9D949);
   background-size: 100% 10px;
   background-repeat: no-repeat;
   background-position: 100% 0%;
@@ -111,8 +111,8 @@ span:hover {
   padding: 2px;
   position: relative;
   z-index: 1;
-  background-color: #0e79b2;
-  background-image: linear-gradient(43deg, #0e79b2 0%, #C850C0 46%, #e5dc15 100%);
+  background-color: #3C486B;
+  background-image: linear-gradient(43deg, #3C486B 0%, #C850C0 46%, #F9D949 100%);
   margin-right: 25px;
   filter: brightness(120%);
   border-radius: 50%;
@@ -127,7 +127,7 @@ span:hover {
 }
 .skills-logo:hover {
   border-radius: 10%;
-  box-shadow: 1px 1px #0e79b2, 2px 2px #0e79b2, 3px 3px #0e79b2;
+  box-shadow: 1px 1px #3C486B, 2px 2px #3C486B, 3px 3px #3C486B;
   transform: translateX(-1px);
   cursor: pointer;
 }
@@ -145,7 +145,7 @@ span:hover {
 
 .container-form {
   max-width: 500px;
-  background-image: linear-gradient(180deg, #0e79b2 0%, #ccc 90%);
+  background-image: linear-gradient(180deg, #3C486B 0%, #F0F0F0 90%);
   font-weight: bold;
 }
 
