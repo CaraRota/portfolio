@@ -5,11 +5,11 @@ $(window).scroll(function () {
     var fadeLeft = $('#fadeLeft');
     var fadeRight = $('#fadeRight');
     var fadePercentage = 0.3; // Set the fade percentage to 50%
-    
+
     // Calculate the fade in and out positions based on the fade percentage
     var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
     var fadeInPosition = scrollTop + (windowHeight * fadePercentage);
-    
+
     // Check if the element is in the viewport
     if (fadeLeft.offset().top + fadeLeft.outerHeight() > fadeInPosition && fadeLeft.offset().top < fadeOutPosition) {
         fadeLeft.addClass('animate__fadeInLeft');
@@ -18,7 +18,7 @@ $(window).scroll(function () {
         fadeLeft.removeClass('animate__fadeInLeft');
         fadeLeft.addClass('animate__fadeOutLeft');
     }
-    
+
     // Check if the element is in the viewport
     if (fadeRight.offset().top + fadeRight.outerHeight() > fadeInPosition && fadeRight.offset().top < fadeOutPosition) {
         fadeRight.addClass('animate__fadeInRight');
@@ -36,11 +36,11 @@ $(window).scroll(function () {
     var fadeLeft = $('#backLeft');
     var fadeRight = $('#backRight');
     var fadePercentage = 0.3; // Set the fade percentage to 50%
-    
+
     // Calculate the fade in and out positions based on the fade percentage
     var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
     var fadeInPosition = scrollTop + (windowHeight * fadePercentage);
-    
+
     // Check if the element is in the viewport
     if (fadeLeft.offset().top + fadeLeft.outerHeight() > fadeInPosition && fadeLeft.offset().top < fadeOutPosition) {
         fadeLeft.addClass('animate__backInLeft');
@@ -49,7 +49,7 @@ $(window).scroll(function () {
         fadeLeft.removeClass('animate__backInLeft');
         fadeLeft.addClass('animate__backOutLeft');
     }
-    
+
     // Check if the element is in the viewport
     if (fadeRight.offset().top + fadeRight.outerHeight() > fadeInPosition && fadeRight.offset().top < fadeOutPosition) {
         fadeRight.addClass('animate__backInRight');
@@ -61,3 +61,55 @@ $(window).scroll(function () {
 });
 
 // CODE FOR SECTION PORTFOLIO
+
+$(window).scroll(function () {
+    var scrollTop = $(this).scrollTop();
+    var windowHeight = $(this).height();
+    var fadeLeft = $('#fadeInTopLeft');
+    var fadeRight = $('#fadeInTopRight');
+    var fadePercentage = 0.3; // Set the fade percentage to 50%
+
+    // Calculate the fade in and out positions based on the fade percentage
+    var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
+    var fadeInPosition = scrollTop + (windowHeight * fadePercentage);
+
+    // Check if the element is in the viewport
+    if (fadeLeft.offset().top + fadeLeft.outerHeight() > fadeInPosition && fadeLeft.offset().top < fadeOutPosition) {
+        fadeLeft.addClass('animate__fadeInTopLeft');
+        fadeLeft.removeClass('animate__fadeOutTopLeft');
+    } else {
+        fadeLeft.removeClass('animate__fadeInTopLeft');
+        fadeLeft.addClass('animate__fadeOutTopLeft');
+    }
+
+    // Check if the element is in the viewport
+    if (fadeRight.offset().top + fadeRight.outerHeight() > fadeInPosition && fadeRight.offset().top < fadeOutPosition) {
+        fadeRight.addClass('animate__fadeInTopRight');
+        fadeRight.removeClass('animate__fadeOutTopRight');
+    } else {
+        fadeRight.removeClass('animate__fadeInTopRight');
+        fadeRight.addClass('animate__fadeOutTopRight');
+    }
+});
+
+// CODE FOR SECTION CONTACT
+
+$(window).scroll(function () {
+    var scrollTop = $(this).scrollTop();
+    var windowHeight = $(this).height();
+    var fadeLeft = $('#bounceIn');
+    var fadePercentage = 0.3; // Set the fade percentage to 50%
+
+    // Calculate the fade in and out positions based on the fade percentage
+    var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
+    var fadeInPosition = scrollTop + (windowHeight * fadePercentage);
+
+    // Check if the element is in the viewport
+    if (fadeLeft.offset().top + fadeLeft.outerHeight() > fadeInPosition && fadeLeft.offset().top < fadeOutPosition) {
+        fadeLeft.addClass('animate__bounceIn');
+        fadeLeft.removeClass('animate__bounceOut');
+    } else {
+        fadeLeft.removeClass('animate__bounceIn');
+        fadeLeft.addClass('animate__bounceOut');
+    }
+});
