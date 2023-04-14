@@ -98,6 +98,7 @@ $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
     var windowHeight = $(this).height();
     var fadeLeft = $('#bounceIn');
+    var fadeRight = $('#bounceIn2');
     var fadePercentage = 0.3; // Set the fade percentage to 50%
 
     // Calculate the fade in and out positions based on the fade percentage
@@ -111,5 +112,13 @@ $(window).scroll(function () {
     } else {
         fadeLeft.removeClass('animate__bounceIn');
         fadeLeft.addClass('animate__bounceOut');
+    }
+    // Check if the element is in the viewport
+    if (fadeRight.offset().top + fadeRight.outerHeight() > fadeInPosition && fadeRight.offset().top < fadeOutPosition) {
+        fadeRight.addClass('animate__bounceIn');
+        fadeRight.removeClass('animate__bounceOut');
+    } else {
+        fadeRight.removeClass('animate__bounceIn');
+        fadeRight.addClass('animate__bounceOut');
     }
 });

@@ -112,6 +112,16 @@ body {
   width: auto;
 }
 
+.container-form {
+  max-width: 500px;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
   .vh {
     height: 100vh;

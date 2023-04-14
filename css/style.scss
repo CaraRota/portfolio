@@ -121,6 +121,16 @@ body {
     width: auto;
 }
 
+.container-form {
+    max-width: 500px;
+    background-image: $container-form-color;
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 // We assign a verticual height in order to hide our content in the rest of the pages when we navigate with >= MD screens
 @media (min-width: 768px) {
     .vh {
