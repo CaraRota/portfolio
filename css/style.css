@@ -167,7 +167,15 @@ span:hover {
   .mobile-responsive {
     font-size: 1.6em;
   }
+  #aboutme {
+    margin-top: 25px;
+  }
   .cv-text {
     font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .mobile-responsive {
+    font-size: 43px;
   }
 }/*# sourceMappingURL=style.css.map */
