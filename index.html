@@ -15,7 +15,7 @@
     <!-- CDN link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Importing our own JS -->
-    <script src="./js/main.js"></script>
+    <script defer src="./js/main.js"></script>
     <title>Oui Dev - Portfolio of Sebastian Camia</title>
 </head>
 
@@ -55,7 +55,11 @@
                     class="animate__animated animate__fadeInRight row col-md-6 col-12 d-flex align-items-center align-content-center text-center">
                     <h1 class="title-h1">Sebastian Camia</h1>
                     <h6 class="title-h3">Road to</h6>
-                    <h3 class="title-h3">FullStack Developer</h3>
+                    <h3 class="title-h3">
+                        <span class="fancy mobile-responsive">
+                            FullStack Developer
+                        </span>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -134,11 +138,43 @@
                 <div class="col-12">
                     <h1 class="title-h1 text-center">Contact Me</h1>
                 </div>
-                <div id="bounceIn" class="col-12 col-md-6 text-center">
-                    I am also (not so) social!
+                <div id="bounceIn" class="col-12 col-md-6 text-center d-flex align-items-center px-4">
+                    <div class="row">
+                        <h3 class="col-12 mb-4 sub-title">I am also <span class="fancy img-fluid">not so</span> social!
+                        </h3>
+                        <div class="col-3">
+                            <a href="https://www.linkedin.com/in/sebastian-emanuel-camia-trefs/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img class="icons-effect img-fluid" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-title="Visit my LinkedIn!" src="./img/linkedin-icon.png"
+                                    alt="LinkedIn Icon">
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://github.com/CaraRota" target="_blank" rel="noopener noreferrer">
+                                <img class="icons-effect img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Check out my GitHub!" src="./img/github-icon.png" alt="GitHub Icon">
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://wa.me/5493463645114?text=Hello%20Sebastian!%20I%20am%20contacting%20you%20from%20your%20portfolio%20website"
+                                target="_blank" rel="noopener noreferrer">
+                                <img class="icons-effect img-fluid" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-title="Send a Whatsapp!" src="./img/whatsapp-icon.png" alt="WhatsApp Icon">
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://t.me/CaraRota07" target="_blank" rel="noopener noreferrer">
+                                <img class="icons-effect img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Reach out to me in Telegram!" src="./img/telegram-icon.png"
+                                    alt="Telegram Icon">
+                            </a>
+                            <h3 class="col-12 mb-4 sub-title">or...</h3>
+                        </div>
+                    </div>
                 </div>
                 <div id="bounceIn2"
-                    class="col-12 col-md-6 animate__animated animate__animate__bounceIn container container-form rounded pt-2 uppercase">
+                    class="col-12 col-md-6 animate__animated animate__animate__bounceIn container container-form rounded pt-2 uppercase px-4 my-4">
                     <div class="mb-3 text-center">
                         <label for="inputName" class="form-label">Name</label>
                         <input type="email" class="form-control" id="inputName" placeholder="🥷🏻What's your name?">

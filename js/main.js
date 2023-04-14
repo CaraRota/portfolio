@@ -122,3 +122,7 @@ $(window).scroll(function () {
         fadeRight.addClass('animate__bounceOut');
     }
 });
+
+// INIT BOOTSTRAP TOOLTIPS
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

@@ -1,5 +1,5 @@
 // BG COLOR OF THE WEBSITE
-$site-bg-color: #fff;
+$site-bg-color: #ccc;
 
 // NAVBAR COLORS
 $nav-bg-color: #0e79b2;
@@ -16,4 +16,6 @@ $portrait-color: #C850C0;
 
 $sub-title: #000;
 
-$container-form-color: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+// CONTACT FORM BACKGROUND
+$container-form-color: linear-gradient(180deg, $nav-bg-color 0%, $site-bg-color 90%);
+$fancy-font: 'Bebas Neue', cursive;
