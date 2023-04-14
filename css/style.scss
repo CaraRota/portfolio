@@ -91,7 +91,7 @@ span:hover {
     background-position: 0% 100%;
     border-radius: 5px;
     transition: background-position .7s, background-size .5s ease-in-out;
-    cursor: url(../img/cursor.png), auto;
+    cursor: pointer;
 }
 
 .sub-title {
@@ -162,11 +162,8 @@ span:hover {
     text-transform: uppercase;
 }
 
-// We assign a verticual height in order to hide our content in the rest of the pages when we navigate with >= MD screens
-@media (min-width: 768px) {
-    .vh {
-        height: 100vh;
-    }
+.vh {
+    height: 100vh;
 }
 
 @media (max-width: 330px) {
@@ -178,5 +175,9 @@ span:hover {
 @media (max-width: 376px) {
     .mobile-responsive {
         font-size: 1.6em;
+    }
+
+    .cv-text {
+        font-size: 10px;
     }
 }

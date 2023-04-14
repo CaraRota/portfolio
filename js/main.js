@@ -1,127 +1,44 @@
-// CODE FOR SECTION HOME
-$(window).scroll(function () {
-    var scrollTop = $(this).scrollTop();
-    var windowHeight = $(this).height();
-    var fadeLeft = $('#fadeLeft');
-    var fadeRight = $('#fadeRight');
-    var fadePercentage = 0.3; // Set the fade percentage to 50%
-
-    // Calculate the fade in and out positions based on the fade percentage
+// Function to handle scroll animations
+function handleScrollAnimation(elementId, fadeInClass, fadeOutClass, fadePercentage) {
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var fadeElement = $(elementId);
     var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
     var fadeInPosition = scrollTop + (windowHeight * fadePercentage);
 
-    // Check if the element is in the viewport
-    if (fadeLeft.offset().top + fadeLeft.outerHeight() > fadeInPosition && fadeLeft.offset().top < fadeOutPosition) {
-        fadeLeft.addClass('animate__fadeInLeft');
-        fadeLeft.removeClass('animate__fadeOutLeft');
+    if (fadeElement.offset().top + fadeElement.outerHeight() > fadeInPosition && fadeElement.offset().top < fadeOutPosition) {
+        fadeElement.addClass(fadeInClass);
+        fadeElement.removeClass(fadeOutClass);
     } else {
-        fadeLeft.removeClass('animate__fadeInLeft');
-        fadeLeft.addClass('animate__fadeOutLeft');
+        fadeElement.removeClass(fadeInClass);
+        fadeElement.addClass(fadeOutClass);
     }
+}
 
-    // Check if the element is in the viewport
-    if (fadeRight.offset().top + fadeRight.outerHeight() > fadeInPosition && fadeRight.offset().top < fadeOutPosition) {
-        fadeRight.addClass('animate__fadeInRight');
-        fadeRight.removeClass('animate__fadeOutRight');
-    } else {
-        fadeRight.removeClass('animate__fadeInRight');
-        fadeRight.addClass('animate__fadeOutRight');
-    }
+// CODE FOR SECTION HOME
+$(window).scroll(function () {
+    handleScrollAnimation('#fadeLeft', 'animate__fadeInLeft', 'animate__fadeOutLeft', 0.5);
+    handleScrollAnimation('#fadeRight', 'animate__fadeInRight', 'animate__fadeOutRight', 1);
 });
 
 // CODE FOR SECTION ABOUT ME
 $(window).scroll(function () {
-    var scrollTop = $(this).scrollTop();
-    var windowHeight = $(this).height();
-    var fadeLeft = $('#backLeft');
-    var fadeRight = $('#backRight');
-    var fadePercentage = 0.3; // Set the fade percentage to 50%
-
-    // Calculate the fade in and out positions based on the fade percentage
-    var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
-    var fadeInPosition = scrollTop + (windowHeight * fadePercentage);
-
-    // Check if the element is in the viewport
-    if (fadeLeft.offset().top + fadeLeft.outerHeight() > fadeInPosition && fadeLeft.offset().top < fadeOutPosition) {
-        fadeLeft.addClass('animate__backInLeft');
-        fadeLeft.removeClass('animate__backOutLeft');
-    } else {
-        fadeLeft.removeClass('animate__backInLeft');
-        fadeLeft.addClass('animate__backOutLeft');
-    }
-
-    // Check if the element is in the viewport
-    if (fadeRight.offset().top + fadeRight.outerHeight() > fadeInPosition && fadeRight.offset().top < fadeOutPosition) {
-        fadeRight.addClass('animate__backInRight');
-        fadeRight.removeClass('animate__backOutRight');
-    } else {
-        fadeRight.removeClass('animate__backInRight');
-        fadeRight.addClass('animate__backOutRight');
-    }
+    handleScrollAnimation('#backLeft', 'animate__backInLeft', 'animate__backOutLeft', 0.5);
+    handleScrollAnimation('#backRight', 'animate__backInRight', 'animate__backOutRight', 1);
 });
 
 // CODE FOR SECTION PORTFOLIO
-
 $(window).scroll(function () {
-    var scrollTop = $(this).scrollTop();
-    var windowHeight = $(this).height();
-    var fadeLeft = $('#fadeInTopLeft');
-    var fadeRight = $('#fadeInTopRight');
-    var fadePercentage = 0.3; // Set the fade percentage to 50%
-
-    // Calculate the fade in and out positions based on the fade percentage
-    var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
-    var fadeInPosition = scrollTop + (windowHeight * fadePercentage);
-
-    // Check if the element is in the viewport
-    if (fadeLeft.offset().top + fadeLeft.outerHeight() > fadeInPosition && fadeLeft.offset().top < fadeOutPosition) {
-        fadeLeft.addClass('animate__fadeInTopLeft');
-        fadeLeft.removeClass('animate__fadeOutTopLeft');
-    } else {
-        fadeLeft.removeClass('animate__fadeInTopLeft');
-        fadeLeft.addClass('animate__fadeOutTopLeft');
-    }
-
-    // Check if the element is in the viewport
-    if (fadeRight.offset().top + fadeRight.outerHeight() > fadeInPosition && fadeRight.offset().top < fadeOutPosition) {
-        fadeRight.addClass('animate__fadeInTopRight');
-        fadeRight.removeClass('animate__fadeOutTopRight');
-    } else {
-        fadeRight.removeClass('animate__fadeInTopRight');
-        fadeRight.addClass('animate__fadeOutTopRight');
-    }
+    handleScrollAnimation('#fadeInTopLeft', 'animate__fadeInTopLeft', 'animate__fadeOutTopLeft', 0.5);
+    handleScrollAnimation('#fadeInTopRight', 'animate__fadeInTopRight', 'animate__fadeOutTopRight', 1);
 });
 
 // CODE FOR SECTION CONTACT
-
 $(window).scroll(function () {
-    var scrollTop = $(this).scrollTop();
-    var windowHeight = $(this).height();
-    var fadeLeft = $('#bounceIn');
-    var fadeRight = $('#bounceIn2');
-    var fadePercentage = 0.3; // Set the fade percentage to 50%
-
-    // Calculate the fade in and out positions based on the fade percentage
-    var fadeOutPosition = scrollTop + (windowHeight * (1 - fadePercentage));
-    var fadeInPosition = scrollTop + (windowHeight * fadePercentage);
-
-    // Check if the element is in the viewport
-    if (fadeLeft.offset().top + fadeLeft.outerHeight() > fadeInPosition && fadeLeft.offset().top < fadeOutPosition) {
-        fadeLeft.addClass('animate__bounceIn');
-        fadeLeft.removeClass('animate__bounceOut');
-    } else {
-        fadeLeft.removeClass('animate__bounceIn');
-        fadeLeft.addClass('animate__bounceOut');
-    }
-    // Check if the element is in the viewport
-    if (fadeRight.offset().top + fadeRight.outerHeight() > fadeInPosition && fadeRight.offset().top < fadeOutPosition) {
-        fadeRight.addClass('animate__bounceIn');
-        fadeRight.removeClass('animate__bounceOut');
-    } else {
-        fadeRight.removeClass('animate__bounceIn');
-        fadeRight.addClass('animate__bounceOut');
-    }
+    handleScrollAnimation('#bounceIn', 'animate__bounceIn', 'animate__bounceOut', 0.5);
+    handleScrollAnimation('#bounceIn2', 'animate__bounceIn', 'animate__bounceOut', 1);
 });
+
 
 // INIT BOOTSTRAP TOOLTIPS
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
