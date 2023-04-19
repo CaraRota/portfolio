@@ -170,12 +170,30 @@ span:hover {
     font-weight: bold;
 }
 
+.btn-dark {
+    font-weight: bold;
+    color: $sub-title;
+    background-color: $nav-bg-color;
+
+    &:hover {
+        color: $nav-bg-color;
+        background-color: $sub-title;
+    }
+}
+
 .uppercase {
     text-transform: uppercase;
 }
 
 .vh {
     height: 100vh;
+}
+
+.toastify {
+    background: $toastify-background-color;
+    color: $toastify-font-color;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #000;
 }
 
 @media (max-width: 330px) {

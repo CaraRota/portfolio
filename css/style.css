@@ -161,12 +161,29 @@ span:hover {
   font-weight: bold;
 }
 
+.btn-dark {
+  font-weight: bold;
+  color: #000;
+  background-color: #3C486B;
+}
+.btn-dark:hover {
+  color: #3C486B;
+  background-color: #000;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
 
 .vh {
   height: 100vh;
+}
+
+.toastify {
+  background: #3C486B;
+  color: #F9D949;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #000;
 }
 
 @media (max-width: 330px) {
