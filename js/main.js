@@ -6,14 +6,48 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // SEND BUTTON STARTS HERE
-const sendMsg = (e) => {
+const btnSend = document.querySelector("#form")
+btnSend.addEventListener("submit", sendMsg = (e) => {
     e.preventDefault()
-    const inputName = document.querySelector("#inputName")
-    const name = inputName.value || alert("Please verify your Name")
-}
 
-const btnSend = document.querySelector("#btnSend")
-btnSend.addEventListener("submit", sendMsg)
+    let name = inputName.value.trim()
+    if (!name) {
+        Toastify({
+            text: "Please verify your Name",
+            gravity: "top",
+            position: "right",
+        }).showToast()
+
+        return
+    }
+
+    let email = inputEmail.value.trim()
+    if (!email) {
+        Toastify({
+            text: "Please verify your Email",
+            gravity: "top",
+            position: "right",
+        }).showToast()
+
+        return
+    }
+
+    let message = inputMessage.value.trim()
+    if (!message) {
+        Toastify({
+            text: "Please verify your Message",
+            gravity: "top",
+            position: "right",
+        }).showToast()
+
+        return
+    }
+
+    const myEmail = "logicalbrainstudio@gmail.com"
+
+    window.location.href = `mailto:${myEmail}?subject=Hello Seb! Im ${name}!&body=${message}%0D%0A%0D%0AYou can reply to this message by sending me an email here: %0D%0A${email}`
+    form.reset()
+})
 
 
 // RESET BUTTON STARTS HERE
