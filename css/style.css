@@ -184,6 +184,7 @@ span:hover {
   color: #F9D949;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #000;
+  text-align: center;
 }
 
 @media (max-width: 330px) {
