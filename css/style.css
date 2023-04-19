@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: #F0F0F0;
+  background: #f0f0f0;
 }
 
 .bg-nav {
@@ -63,7 +63,7 @@ body {
 }
 
 .title-h3 {
-  color: #F0F0F0;
+  color: #f0f0f0;
   text-shadow: #000 1px 0 10px;
 }
 
@@ -100,11 +100,16 @@ span:hover {
   overflow-x: hidden;
 }
 
-#aboutme,
-#portfolio,
+#aboutme {
+  background-color: rgba(170, 34, 170, 0.1333333333);
+}
+
+#portfolio {
+  background-color: #f0f0f0;
+}
+
 #contact {
-  padding-top: 100px;
-  /* 50px + 60px */
+  background-color: #f0f0f0;
 }
 
 .portrait-img {
@@ -145,7 +150,7 @@ span:hover {
 
 .container-form {
   max-width: 500px;
-  background-image: linear-gradient(180deg, #3C486B 0%, #F0F0F0 90%);
+  background-image: linear-gradient(180deg, #3C486B 0%, #f0f0f0 90%);
   font-weight: bold;
 }
 
