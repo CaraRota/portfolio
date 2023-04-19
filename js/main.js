@@ -45,7 +45,13 @@ btnSend.addEventListener("submit", sendMsg = (e) => {
 
     const myEmail = "logicalbrainstudio@gmail.com"
 
-    window.location.href = `mailto:${myEmail}?subject=Hello Seb! Im ${name}!&body=${message}%0D%0A%0D%0AYou can reply to this message by sending me an email here: %0D%0A${email}`
+    window.location.href = `mailto:${myEmail}?subject=Hello Seb! My name is ${name}!&body=${message}%0D%0A%0D%0AYou can reply to this message by sending me an email here: %0D%0A${email}`
+    Toastify({
+        text: "A window is popping up now!",
+        gravity: "top",
+        position: "right",
+    }).showToast()
+
     form.reset()
 })
 
