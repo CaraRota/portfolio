@@ -174,10 +174,8 @@ span:hover {
     text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-    .vh {
-        height: 100vh;
-    }
+.vh {
+    height: 100vh;
 }
 
 @media (max-width: 330px) {

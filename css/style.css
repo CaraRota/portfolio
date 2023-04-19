@@ -101,7 +101,7 @@ span:hover {
 }
 
 #aboutme {
-  background-color: rgba(170, 34, 170, 0.1333333333);
+  background-color: #f0f0f0;
 }
 
 #portfolio {
@@ -158,11 +158,10 @@ span:hover {
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-  .vh {
-    height: 100vh;
-  }
+.vh {
+  height: 100vh;
 }
+
 @media (max-width: 330px) {
   .fancy {
     font-size: 1.5em;
