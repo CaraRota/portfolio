@@ -226,13 +226,13 @@ span:hover {
     }
 }
 
-input {
+.input {
     width: 0;
     height: 0;
     visibility: hidden;
 }
 
-input:checked+label {
+.input:checked+.label {
     background: #242424;
 
     &:after {
@@ -241,39 +241,39 @@ input:checked+label {
         background: linear-gradient(180deg, #777, $btn-color1-dark);
     }
 
-    &label:active:after {
+    &.label:active:after {
         @include darkWMultiplier(260px);
     }
 }
 
-input:checked+label input:checked+label+.background {
+.input:checked+.label input:checked+.label+.background {
     background: #242424;
 }
 
-label svg {
+.label svg {
     position: absolute;
     @include darkWMultiplier(120px);
     @include darkTMultiplier(40px);
     z-index: 100;
 }
 
-label svg.sun {
+.label svg.sun {
     @include darkLMultiplier(40px);
     fill: #fff;
     transition: $transition;
 }
 
-label svg.moon {
+.label svg.moon {
     @include darkLMultiplier(340px);
     fill: #7e7e7e;
     transition: $transition;
 }
 
-input:checked+label svg.sun {
+.input:checked+.label svg.sun {
     fill: #7e7e7e;
 }
 
-input:checked+label svg.moon {
+.input:checked+.label svg.moon {
     fill: #fff;
 }
 

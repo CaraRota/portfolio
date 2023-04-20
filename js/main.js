@@ -5,7 +5,11 @@ AOS.init();
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-// SEND BUTTON STARTS HERE
+///////////////////////////////
+//      FORM STARS HERE      //
+///////////////////////////////
+
+// SEND BUTTON STARTS HERE 
 const btnSend = document.querySelector("#form")
 btnSend.addEventListener("submit", sendMsg = (e) => {
     e.preventDefault()
