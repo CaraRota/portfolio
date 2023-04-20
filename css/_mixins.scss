@@ -10,3 +10,20 @@
     max-height: $h;
     width: auto;
 }
+
+@mixin darkMultiplier ($w, $h) {
+    height: calc($h / $darkModeMultiplier);
+    width: calc($w / $darkModeMultiplier);
+}
+
+@mixin darkWMultiplier ($w) {
+    width: calc($w / $darkModeMultiplier);
+}
+
+@mixin darkLMultiplier ($l) {
+    left: calc($l / $darkModeMultiplier);
+}
+
+@mixin darkTMultiplier ($t) {
+    top: calc($t / $darkModeMultiplier);
+}

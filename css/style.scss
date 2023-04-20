@@ -202,58 +202,83 @@ span:hover {
     color: $footer-text;
 }
 
-// DARK MODE STARTS HERE
-.switch {
+// TOGGLER FOR DARK/LIGHT MODE
+.label {
+    @include darkMultiplier (500px, 200px);
     position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    display: none;
-}
-
-.slider-darkmode {
-    position: absolute;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: $site-bg-color-dark;
-    color: $btn-color1;
-    border-radius: 34px;
     transition: $transition;
 
-    &:hover {
-        border-radius: 34px;
-    }
-
-    &:before {
+    &:after {
         content: "";
+        @include darkMultiplier(180px, 180px);
         position: absolute;
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background: $site-bg-color;
-        border-radius: 50%;
+        @include darkTMultiplier(10px);
+        @include darkLMultiplier(10px);
+        background: linear-gradient(180deg, #ffcc89, #d8860b);
+        border-radius: 180px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
         transition: $transition;
     }
 }
 
-input:checked+.slider-darkmode {
-    background: $site-bg-color;
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked+label {
+    background: #242424;
+
+    &:after {
+        @include darkLMultiplier(490px);
+        transform: translateX(-100%);
+        background: linear-gradient(180deg, #777, #3a3a3a);
+    }
+
+    &label:active:after {
+        @include darkWMultiplier(260px);
+    }
+}
+
+input:checked+label input:checked+label+.background {
+    background: #242424;
+}
+
+label svg {
+    position: absolute;
+    @include darkWMultiplier(120px);
+    @include darkTMultiplier(40px);
+    z-index: 100;
+}
+
+label svg.sun {
+    @include darkLMultiplier(40px);
+    fill: #fff;
     transition: $transition;
-
-    &:before {
-        transform: translateX(26px);
-        transition: $transition;
-        background: $site-bg-color-dark;
-    }
 }
 
+label svg.moon {
+    @include darkLMultiplier(340px);
+    fill: #7e7e7e;
+    transition: $transition;
+}
+
+input:checked+label svg.sun {
+    fill: #7e7e7e;
+}
+
+input:checked+label svg.moon {
+    fill: #fff;
+}
+
+
+// DARK MODE STARTS HERE
 .dark-mode {
     transition: $transition;
     background-color: $site-bg-color-dark;
