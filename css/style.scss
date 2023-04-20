@@ -173,7 +173,7 @@ span:hover {
 
 .btn-dark {
     font-weight: bold;
-    color: $sub-title;
+    color: $btn-color1;
     background-color: $nav-bg-color;
 
     &:hover {
@@ -341,7 +341,7 @@ input:checked+.slider-darkmode {
 
     .btn-dark {
         transition: 1s;
-        color: $sub-title-dark;
+        color: $btn-color1-dark;
         background-color: $nav-bg-color-dark;
 
         &:hover {
