@@ -11,6 +11,7 @@ html {
 
 body {
   background: #f0f0f0;
+  transition: 1s;
 }
 
 .bg-nav {
@@ -185,6 +186,144 @@ span:hover {
   border-radius: 5px;
   box-shadow: 1px 1px 10px #000;
   text-align: center;
+}
+
+.footer-text-dark {
+  color: #000;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider-darkmode {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  color: #F9D949;
+  border-radius: 34px;
+  transition: 1s;
+}
+.slider-darkmode:hover {
+  border-radius: 34px;
+}
+.slider-darkmode:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+input:checked + .slider-darkmode {
+  background: #f0f0f0;
+}
+input:checked + .slider-darkmode:before {
+  transform: translateX(26px);
+}
+
+.dark-mode {
+  transition: 1s;
+  background-color: #2C3639;
+}
+.dark-mode .bg-nav {
+  transition: 1s;
+  background-color: #3F4E4F;
+  box-shadow: 0 0 10px 0 #DCD7C9;
+  color: #DCD7C9;
+}
+.dark-mode .button-eff {
+  background-color: #3F4E4F;
+  color: #3F4E4F;
+  border: 2px solid #3F4E4F;
+  box-shadow: 0 0.6em #2C3639, 0 0.7em rgba(0, 0, 0, 0.4);
+}
+.dark-mode .button-eff:hover {
+  background: #3F4E4F;
+  color: #3F4E4F;
+  box-shadow: 0 0.4em #2C3639, 0 0.5em rgba(0, 0, 0, 0.4);
+}
+.dark-mode .button-eff:active {
+  box-shadow: 0 0.2em #2C3639, 0 0.5em rgba(0, 0, 0, 0.4);
+}
+.dark-mode .button-eff:focus {
+  color: #DCD7C9;
+}
+.dark-mode .title-h1 {
+  transition: 1s;
+  color: #3F4E4F;
+  text-shadow: #3F4E4F -1px 0 3px;
+  font-family: "Bebas Neue", cursive;
+}
+.dark-mode .title-h3 {
+  transition: 1s;
+  color: #2C3639;
+  text-shadow: #DCD7C9 1px 0 10px;
+}
+.dark-mode .fancy {
+  transition: 1s;
+  font-family: "Bebas Neue", cursive;
+  background-image: linear-gradient(#2C3639, #3F4E4F);
+}
+.dark-mode .sub-title {
+  transition: 1s;
+  color: #DCD7C9;
+  text-shadow: #DCD7C9 -1px 0 3px;
+}
+.dark-mode #aboutme {
+  transition: 1s;
+  background-color: #2C3639;
+}
+.dark-mode #portfolio {
+  transition: 1s;
+  background-color: #2C3639;
+}
+.dark-mode #contact {
+  transition: 1s;
+  background-color: #2C3639;
+}
+.dark-mode .portrait-img {
+  transition: 1s;
+  background-color: #3F4E4F;
+  background-image: linear-gradient(43deg, #3F4E4F 0%, #A27B5C 46%, #3F4E4F 100%);
+}
+.dark-mode .skills-logo:hover {
+  box-shadow: 1px 1px #3F4E4F, 2px 2px #3F4E4F, 3px 3px #3F4E4F;
+}
+.dark-mode .container-form {
+  transition: 1s;
+  background-image: linear-gradient(180deg, #3F4E4F 0%, #2C3639 90%);
+}
+.dark-mode .btn-dark {
+  transition: 1s;
+  color: #DCD7C9;
+  background-color: #3F4E4F;
+}
+.dark-mode .btn-dark:hover {
+  color: #3F4E4F;
+  background-color: #DCD7C9;
+}
+.dark-mode .toastify {
+  background: #3F4E4F;
+  color: #3F4E4F;
+}
+.dark-mode .footer-text {
+  color: #DCD7C9;
 }
 
 @media (max-width: 330px) {

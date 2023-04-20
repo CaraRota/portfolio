@@ -75,3 +75,10 @@ btnReset.addEventListener("click", resetForm = () => {
         }).showToast();
     }
 })
+
+// DARK MODE STARTS HERE
+const btnDark = document.querySelector("#btnDark")
+btnDark.addEventListener("click", changeColor = () => {
+    const darkMode = document.body
+    darkMode.classList.toggle("dark-mode")
+})

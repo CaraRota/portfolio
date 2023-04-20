@@ -23,8 +23,47 @@ $btn-focus: #000;
 // THIRD COLOR OF THE PORTRAIT (1st is $nav-bg-color 2nd is $btn-color1)
 $portrait-color: #C850C0;
 
+$title-h3-shadow: #000;
 $sub-title: #000;
 
 // CONTACT FORM BACKGROUND
 $container-form-color: linear-gradient(180deg, $nav-bg-color 0%, $site-bg-color 90%);
 $fancy-font: 'Bebas Neue', cursive;
+
+$footer-text: #000;
+
+
+// --------------------------------------------------------------------------------------------------------------------- //
+// DARK MODE STARTS HERE
+// --------------------------------------------------------------------------------------------------------------------- //
+
+// BG COLOR OF THE WEBSITE & #HOME
+$site-bg-color-dark: #2C3639;
+// BG OF ABOUT ME
+$site-bg-aboutme-dark: #2C3639;
+// BG OF PORTFOLIO
+$site-bg-portfolio-dark: #2C3639;
+// BG OF CONTACT ME
+$site-bg-contact-dark: #2C3639;
+
+// NAVBAR COLORS
+$nav-bg-color-dark: #3F4E4F;
+$shadow-dark: 0 0 10px 0 #DCD7C9;
+$color-dark: #DCD7C9;
+
+// BUTTONS IN NAVBAR COLORS
+$btn-color1-dark: #3F4E4F;
+$btn-color2-dark: #2C3639;
+$btn-focus-dark: #DCD7C9;
+
+// THIRD COLOR OF THE PORTRAIT (1st is $nav-bg-color 2nd is $btn-color1)
+$portrait-color-dark: #A27B5C;
+
+$title-h3-shadow-dark: #DCD7C9;
+$sub-title-dark: #DCD7C9;
+
+// CONTACT FORM BACKGROUND
+$container-form-color-dark: linear-gradient(180deg, $nav-bg-color-dark 0%, $site-bg-color-dark 90%);
+$fancy-font-dark: 'Bebas Neue', cursive;
+
+$footer-text-dark: #DCD7C9;
