@@ -210,7 +210,7 @@ span:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #000;
+  background: #2C3639;
   color: #F9D949;
   border-radius: 34px;
   transition: 1s;
@@ -225,16 +225,19 @@ span:hover {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background: #fff;
+  background: #f0f0f0;
   border-radius: 50%;
   transition: 1s;
 }
 
 input:checked + .slider-darkmode {
   background: #f0f0f0;
+  transition: 1s;
 }
 input:checked + .slider-darkmode:before {
   transform: translateX(26px);
+  transition: 1s;
+  background: #2C3639;
 }
 
 .dark-mode {

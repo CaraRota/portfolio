@@ -15,7 +15,7 @@ html {
 
 body {
     background: $site-bg-color;
-    transition: 1s;
+    transition: $transition;
 }
 
 .bg-nav {
@@ -221,10 +221,10 @@ span:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: $sub-title;
+    background: $site-bg-color-dark;
     color: $btn-color1;
     border-radius: 34px;
-    transition: 1s;
+    transition: $transition;
 
     &:hover {
         border-radius: 34px;
@@ -237,26 +237,29 @@ span:hover {
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background: #fff;
+        background: $site-bg-color;
         border-radius: 50%;
-        transition: 1s;
+        transition: $transition;
     }
 }
 
 input:checked+.slider-darkmode {
     background: $site-bg-color;
+    transition: $transition;
 
     &:before {
         transform: translateX(26px);
+        transition: $transition;
+        background: $site-bg-color-dark;
     }
 }
 
 .dark-mode {
-    transition: 1s;
+    transition: $transition;
     background-color: $site-bg-color-dark;
 
     .bg-nav {
-        transition: 1s;
+        transition: $transition;
         @include navbar($nav-bg-color-dark, $shadow-dark, $color-dark);
     }
 
@@ -282,47 +285,47 @@ input:checked+.slider-darkmode {
     }
 
     .title-h1 {
-        transition: 1s;
+        transition: $transition;
         color: $nav-bg-color-dark;
         text-shadow: $nav-bg-color-dark -1px 0 3px;
         font-family: $fancy-font-dark;
     }
 
     .title-h3 {
-        transition: 1s;
+        transition: $transition;
         color: $site-bg-color-dark;
         text-shadow: $title-h3-shadow-dark 1px 0 10px;
     }
 
     .fancy {
-        transition: 1s;
+        transition: $transition;
         font-family: $fancy-font-dark;
         background-image: linear-gradient($btn-color2-dark, $btn-color1-dark);
     }
 
     .sub-title {
-        transition: 1s;
+        transition: $transition;
         color: $sub-title-dark;
         text-shadow: $sub-title-dark -1px 0 3px;
     }
 
     #aboutme {
-        transition: 1s;
+        transition: $transition;
         background-color: $site-bg-aboutme-dark;
     }
 
     #portfolio {
-        transition: 1s;
+        transition: $transition;
         background-color: $site-bg-portfolio-dark;
     }
 
     #contact {
-        transition: 1s;
+        transition: $transition;
         background-color: $site-bg-contact-dark;
     }
 
     .portrait-img {
-        transition: 1s;
+        transition: $transition;
         background-color: $nav-bg-color-dark;
         background-image: linear-gradient(43deg, $nav-bg-color-dark 0%, $portrait-color-dark 46%, $btn-color1-dark 100%);
     }
@@ -335,12 +338,12 @@ input:checked+.slider-darkmode {
     }
 
     .container-form {
-        transition: 1s;
+        transition: $transition;
         background-image: $container-form-color-dark;
     }
 
     .btn-dark {
-        transition: 1s;
+        transition: $transition;
         color: $btn-color1-dark;
         background-color: $nav-bg-color-dark;
 
