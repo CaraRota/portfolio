@@ -168,8 +168,13 @@ span:hover {
   background-color: #3C486B;
 }
 .btn-dark:hover {
+  transition: 1s;
   color: #3C486B;
-  background-color: #000;
+  background-color: #F9D949;
+}
+.btn-dark:active {
+  color: #3C486B !important;
+  background-color: #F9D949 !important;
 }
 
 .uppercase {
@@ -343,8 +348,13 @@ span:hover {
   background-color: #DCD7C9;
 }
 .dark-mode .btn-dark:hover {
-  color: #DCD7C9;
-  background-color: #DCD7C9;
+  transition: 1s;
+  color: #DCD7C9 !important;
+  background-color: #3F4E4F !important;
+}
+.dark-mode .btn-dark:active {
+  color: #DCD7C9 !important;
+  background-color: #3F4E4F !important;
 }
 .dark-mode .toastify {
   background: #DCD7C9;

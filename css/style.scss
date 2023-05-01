@@ -177,8 +177,13 @@ span:hover {
     background-color: $nav-bg-color;
 
     &:hover {
+        transition: $transition;
         color: $nav-bg-color;
-        background-color: $sub-title;
+        background-color: $btn-color1;
+    }
+    &:active {
+        color: $nav-bg-color !important;
+        background-color: $btn-color1 !important;
     }
 }
 
@@ -373,8 +378,13 @@ span:hover {
         background-color: $nav-bg-color-dark;
 
         &:hover {
-            color: $nav-bg-color-dark;
-            background-color: $sub-title-dark;
+            transition: $transition;
+            color: $nav-bg-color-dark !important;
+            background-color: $btn-color1-dark !important;
+        }
+        &:active {
+            color: $nav-bg-color-dark !important;
+            background-color: $btn-color1-dark !important;
         }
     }
 
