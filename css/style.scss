@@ -165,6 +165,12 @@ span:hover {
     cursor: pointer;
 }
 
+// PORTFOLIO STARTS HERE
+
+
+
+// PORTFOLIO ENDS HERE
+
 .container-form {
     max-width: 500px;
     background-image: $container-form-color;
@@ -181,6 +187,7 @@ span:hover {
         color: $nav-bg-color;
         background-color: $btn-color1;
     }
+
     &:active {
         color: $nav-bg-color !important;
         background-color: $btn-color1 !important;
@@ -382,6 +389,7 @@ span:hover {
             color: $nav-bg-color-dark !important;
             background-color: $btn-color1-dark !important;
         }
+
         &:active {
             color: $nav-bg-color-dark !important;
             background-color: $btn-color1-dark !important;
