@@ -117,13 +117,6 @@ span:hover {
     background-color: $site-bg-contact;
 }
 
-#aboutme,
-#portfolio,
-#contact {
-    padding-top: 100px;
-    /* 50px + 60px */
-}
-
 .portrait-img {
     padding: 2px;
     position: relative;
@@ -165,12 +158,6 @@ span:hover {
     cursor: pointer;
 }
 
-// PORTFOLIO STARTS HERE
-
-
-
-// PORTFOLIO ENDS HERE
-
 .container-form {
     max-width: 500px;
     background-image: $container-form-color;
@@ -186,11 +173,6 @@ span:hover {
         transition: $transition;
         color: $nav-bg-color;
         background-color: $btn-color1;
-    }
-
-    &:active {
-        color: $nav-bg-color !important;
-        background-color: $btn-color1 !important;
     }
 }
 
