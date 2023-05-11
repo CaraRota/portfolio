@@ -10,17 +10,20 @@ html {
 }
 
 body {
+  transition: 1s;
   background: #f0f0f0;
   transition: 1s;
 }
 
 .bg-nav {
+  transition: 1s;
   background-color: #3C486B;
   box-shadow: 0 0 10px 0 #000;
   color: #fff;
 }
 
 .button-eff {
+  transition: 1s;
   background-color: #3C486B;
   color: #F9D949;
   font-family: "Montserrat", sans-serif;
@@ -57,6 +60,7 @@ body {
 }
 
 .title-h1 {
+  transition: 1s;
   color: #3C486B;
   text-shadow: #3C486B -1px 0 3px;
   font-weight: bold;
@@ -64,11 +68,13 @@ body {
 }
 
 .title-h3 {
+  transition: 1s;
   color: #f0f0f0;
   text-shadow: #000 1px 0 10px;
 }
 
 .fancy {
+  transition: 1s;
   font-family: "Bebas Neue", cursive;
   font-size: 2em;
   top: 50%;
@@ -92,6 +98,7 @@ span:hover {
 }
 
 .sub-title {
+  transition: 1s;
   color: #000;
   text-shadow: #000 -1px 0 3px;
   font-weight: bold;
@@ -102,18 +109,22 @@ span:hover {
 }
 
 #aboutme {
+  transition: 1s;
   background-color: #f0f0f0;
 }
 
 #portfolio {
+  transition: 1s;
   background-color: #f0f0f0;
 }
 
 #contact {
+  transition: 1s;
   background-color: #f0f0f0;
 }
 
 .portrait-img {
+  transition: 1s;
   padding: 2px;
   position: relative;
   z-index: 1;
@@ -125,6 +136,14 @@ span:hover {
   border-style: inset #000;
   max-height: 500px;
   width: auto;
+}
+
+.skills-container {
+  transition: 1s;
+  background-color: #f0f0f0;
+  border: 2px solid;
+  -o-border-image: linear-gradient(43deg, #3C486B 0%, #C850C0 46%, #F9D949 100%) 2;
+     border-image: linear-gradient(43deg, #3C486B 0%, #C850C0 46%, #F9D949 100%) 2;
 }
 
 .skills-logo {
@@ -139,6 +158,7 @@ span:hover {
 }
 
 .english-logo {
+  transition: 1s;
   max-height: 125px;
   width: auto;
 }
@@ -150,12 +170,14 @@ span:hover {
 }
 
 .container-form {
+  transition: 1s;
   max-width: 500px;
   background-image: linear-gradient(180deg, #3C486B 0%, #f0f0f0 90%);
   font-weight: bold;
 }
 
 .btn-dark {
+  transition: 1s;
   font-weight: bold;
   color: #F9D949;
   background-color: #3C486B;
@@ -189,6 +211,7 @@ span:hover {
 }
 
 .footer-text-dark {
+  transition: 1s;
   color: #000;
 }
 
@@ -276,6 +299,7 @@ span:hover {
   color: #DCD7C9;
 }
 .dark-mode .button-eff {
+  transition: 1s;
   background-color: #DCD7C9;
   color: #3F4E4F;
   border: 2px solid #3F4E4F;
@@ -329,6 +353,13 @@ span:hover {
   transition: 1s;
   background-color: #DCD7C9;
   background-image: linear-gradient(43deg, #DCD7C9 0%, #A27B5C 46%, #3F4E4F 100%);
+}
+.dark-mode .skills-container {
+  transition: 1s;
+  background-color: #f0f0f0;
+  border: 2px solid;
+  -o-border-image: linear-gradient(43deg, #DCD7C9 0%, #A27B5C 46%, #3F4E4F 100%) 2;
+     border-image: linear-gradient(43deg, #DCD7C9 0%, #A27B5C 46%, #3F4E4F 100%) 2;
 }
 .dark-mode .skills-logo:hover {
   box-shadow: 1px 1px #DCD7C9, 2px 2px #DCD7C9, 3px 3px #DCD7C9;

@@ -14,15 +14,18 @@ html {
 }
 
 body {
+    transition: $transition;
     background: $site-bg-color;
     transition: $transition;
 }
 
 .bg-nav {
+    transition: $transition;
     @include navbar($nav-bg-color, $shadow, $color);
 }
 
 .button-eff {
+    transition: $transition;
     background-color: $nav-bg-color;
     color: $btn-color1;
     font-family: "Montserrat", sans-serif;
@@ -61,6 +64,7 @@ body {
 }
 
 .title-h1 {
+    transition: $transition;
     color: $nav-bg-color;
     text-shadow: $nav-bg-color -1px 0 3px;
     font-weight: bold;
@@ -68,11 +72,13 @@ body {
 }
 
 .title-h3 {
+    transition: $transition;
     color: $site-bg-color;
     text-shadow: $title-h3-shadow 1px 0 10px;
 }
 
 .fancy {
+    transition: $transition;
     font-family: $fancy-font;
     font-size: 2em;
     top: 50%;
@@ -96,6 +102,7 @@ span:hover {
 }
 
 .sub-title {
+    transition: $transition;
     color: $sub-title;
     text-shadow: $sub-title -1px 0 3px;
     font-weight: bold;
@@ -106,18 +113,22 @@ span:hover {
 }
 
 #aboutme {
+    transition: $transition;
     background-color: $site-bg-aboutme;
 }
 
 #portfolio {
+    transition: $transition;
     background-color: $site-bg-portfolio;
 }
 
 #contact {
+    transition: $transition;
     background-color: $site-bg-contact;
 }
 
 .portrait-img {
+    transition: $transition;
     padding: 2px;
     position: relative;
     z-index: 1;
@@ -129,6 +140,13 @@ span:hover {
     border-style: inset #000;
     max-height: 500px;
     width: auto;
+}
+
+.skills-container {
+    transition: $transition;
+    background-color: $site-bg-color;
+    border: 2px solid;
+    border-image: linear-gradient(43deg, $nav-bg-color 0%, $portrait-color 46%, $btn-color1 100%) 2;
 }
 
 .skills-logo {
@@ -148,6 +166,7 @@ span:hover {
 }
 
 .english-logo {
+    transition: $transition;
     max-height: 125px;
     width: auto;
 }
@@ -159,12 +178,14 @@ span:hover {
 }
 
 .container-form {
+    transition: $transition;
     max-width: 500px;
     background-image: $container-form-color;
     font-weight: bold;
 }
 
 .btn-dark {
+    transition: $transition;
     font-weight: bold;
     color: $btn-color1;
     background-color: $nav-bg-color;
@@ -200,6 +221,7 @@ span:hover {
 }
 
 .footer-text-dark {
+    transition: $transition;
     color: $footer-text;
 }
 
@@ -290,6 +312,7 @@ span:hover {
     }
 
     .button-eff {
+        transition: $transition;
         background-color: $nav-bg-color-dark;
         color: $btn-color1-dark;
         border: 2px solid $btn-color1-dark;
@@ -354,6 +377,13 @@ span:hover {
         transition: $transition;
         background-color: $nav-bg-color-dark;
         background-image: linear-gradient(43deg, $nav-bg-color-dark 0%, $portrait-color-dark 46%, $btn-color1-dark 100%);
+    }
+
+    .skills-container {
+        transition: $transition;
+        background-color: $site-bg-color;
+        border: 2px solid;
+        border-image: linear-gradient(43deg, $nav-bg-color-dark 0%, $portrait-color-dark 46%, $btn-color1-dark 100%) 2;
     }
 
     .skills-logo:hover {
